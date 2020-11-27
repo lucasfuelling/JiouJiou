@@ -6,9 +6,13 @@ module.exports = {
   purge: [],
   theme: {
     
-    extend: {colors:{
+    extend: {
+      colors:{
       'brand-blue': '#1992d4',
-    },
+      },
+      fontFamily:{
+      sans:['Inter var'],
+      },
   }
   },
   variants: {
@@ -16,5 +20,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/ui'),
+    require('@tailwindcss/typography'),
   ],
 }
